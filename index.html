@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snapster</title>
-    <link rel="shortcut icon" href="src/camera.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -21,11 +21,11 @@
         <h1>Snapster</h1>
         <div class="links">
           <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Service</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="gallery/gallery.html">Gallery</a></li>
+            <li><a href="service/service.html">Service</a></li>
             <!-- <li><a href="#">Pricing</a></li> -->
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="socials">
@@ -65,40 +65,52 @@
       </div>
       <img src="src/bg-home.jpg" alt="" class="bgimg" />
     </div>
-    <span data-href="gallery.html"
+    <!-- <span data-href="gallery/gallery.html"
       ><i class="fa-solid fa-angles-down"></i
-    ></span>
+    ></span> -->
+    <a href="gallery/gallery.html"
+      ><i class="fa-solid fa-angles-down"></i
+    ></a>
     <!-- EXPERIMENTAL -->
 
     <div class="nav">
-      <div class="nav-item active">
-        <!-- <i class="material-icons home-icon"> home </i> -->
-        <span class="material-icons home-icon material-symbols-outlined">
-          home
-        </span>
-        <span class="nav-text">Home</span>
-      </div>
-      <div class="nav-item">
-        <!-- <i class="material-icons gallery-thumbnail"> favorite </i> -->
-        <span class="material-icons gallery-icon material-symbols-outlined">
-          gallery_thumbnail
-        </span>
-        <span class="nav-text">Gallery</span>
-      </div>
-      <div class="nav-item">
-        <!-- <i class="material-icons search-icon"> search </i> -->
-        <span class="material-icons service-icon material-symbols-outlined">
-          photo_camera
-        </span>
-        <span class="nav-text">Service</span>
-      </div>
-      <div class="nav-item">
-        <!-- <i class="material-icons person-icon"> person </i> -->
-        <span class="material-icons about-icon material-symbols-outlined">
-          account_circle
-        </span>
-        <span class="nav-text">About</span>
-      </div>
+      <a href="index.html">
+        <div class="nav-item active">
+          <!-- <i class="material-icons home-icon"> home </i> -->
+          <span class="material-icons home-icon material-symbols-outlined">
+            home
+          </span>
+          <!-- <span class="nav-text">Home</span> -->
+        </div></a
+      >
+      <a href="gallery/gallery.html">
+        <div class="nav-item">
+          <!-- <i class="material-icons gallery-thumbnail"> favorite </i> -->
+
+          <span class="material-icons gallery-icon material-symbols-outlined">
+            gallery_thumbnail
+          </span>
+          <!-- <span class="nav-text">Gallery</span> -->
+        </div></a
+      >
+      <a href="service/service.html">
+        <div class="nav-item">
+          <!-- <i class="material-icons search-icon"> search </i> -->
+          <span class="material-icons service-icon material-symbols-outlined">
+            photo_camera
+          </span>
+          <!-- <span class="nav-text">Service</span> -->
+        </div></a
+      >
+      <a href="contact/contact.html">
+        <div class="nav-item">
+          <!-- <i class="material-icons person-icon"> person </i> -->
+          <span class="material-icons about-icon material-symbols-outlined">
+            account_circle
+          </span>
+          <!-- <span class="nav-text">About</span> -->
+        </div></a
+      >
     </div>
 
     <!-- END EXPERIMENTAL -->

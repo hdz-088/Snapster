@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   background-color: #000;
+  text-decoration: none;
 }
 
 header nav {
@@ -31,6 +32,8 @@ header nav h1 {
   font-size: 1.5rem;
   font-style: italic;
   background: none;
+  text-shadow: 0 0 5px #64d5e4b6, 0 0 25px #64d5e4b6, 0 0 50px #64d5e4b6,
+    0 0 200px #64d5e4b6;
 }
 
 header nav .socials .fa-brands {
@@ -208,10 +211,9 @@ span[data-href] {
 }
 
 /* EXPERMENTAL NAVBAR MOBILE */
-.nav {
+/* .nav {
   display: flex;
   flex-direction: row;
-  /* width: 375px; */
   width: 89%;
   margin: auto;
   margin-top: 10px;
@@ -221,8 +223,24 @@ span[data-href] {
   border-bottom: 2px solid #000;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  /* border-bottom-left-radius: 30px; */
-  /* border-bottom-right-radius: 30px; */
+  justify-content: center;
+} */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #121212;
+  padding: 18px 20px;
+  /* border: 2px solid #1b1b1b7e; */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: inset 0px 0px 15px 4px rgba(0,0,0,0.75);
 }
 
 .nav-item {
@@ -235,7 +253,13 @@ span[data-href] {
   transition: all 0.2s ease-out;
   /* background-color: #fff; */
   background-color: #121212;
-  font-family: "poppins";
+}
+
+.nav a{
+  color: inherit !important;
+  text-decoration: inherit;
+  background-color: #121212;
+  border-radius: 30px;
 }
 
 .nav-text {
@@ -250,11 +274,15 @@ span[data-href] {
 
 .material-icons {
   display: inline;
-  font-size: 32px;
+  /* font-size: 32px; */
   background-color: inherit !important;
   transition: color 0.3s;
   border-radius: 30px;
   color: #eee;
+}
+
+.material-symbols-outlined {
+  font-size: 32px;
 }
 
 .nav-item.active {
@@ -262,6 +290,7 @@ span[data-href] {
   border-radius: 30px;
   background-color: #000;
   justify-content: flex-start;
+  text-decoration: none !important;
 }
 
 .nav-item.active > .nav-text {
@@ -269,11 +298,11 @@ span[data-href] {
 }
 
 .nav-item.active > .material-icons.home-icon {
-  color: #8758fd;
+  color: #8758fd !important;
 }
 
 .material-icons.home-icon ~ .nav-text {
-  color: #8758fd;
+  color: #8758fd !important;
 }
 
 .nav-item.active > .material-icons.gallery-icon {
@@ -302,6 +331,18 @@ span[data-href] {
 
 /* END EXPERMIENTAL NAVBAR MOBILE */
 
+/* GALLERY.HTML STYLE */
+
+#gallery{
+  height: 90vh;
+  width: 100vw;
+  background-color: #eee;
+}
+
+
+/* SERVICE>HTML STYLE */
+
+/* MEDIA QUERIES DO NOT WRITE ANYTHING BELOW THIS  */
 @media only screen and (min-width: 1001px) {
   .nav,
   .nav-item {
