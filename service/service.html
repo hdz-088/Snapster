@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snapster</title>
     <link rel="shortcut icon" href="../src/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="../style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -24,7 +25,6 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../gallery/gallery.html">Gallery</a></li>
             <li><a class="active" href="service.html">Service</a></li>
-            <!-- <li><a href="#">Pricing</a></li> -->
             <li><a href="../contact/contact.html">Contact</a></li>
           </ul>
         </div>
@@ -41,31 +41,23 @@
         </div>
       </nav>
     </header>
-    <div id="home">
-      <div class="heading">
-        <p>Hello There!</p>
-        <h1>
-          I am
-          <font
-            color="#64d5e4"
-            style="
-              text-shadow: 0 0 5px #64d5e460, 0 0 25px #64d5e4,
-                0 0 50px #64d5e460, 0 0 200px #64d5e460;
-            "
-            >Allen Anthony</font
-          >
-        </h1>
-        <p>
-          Capturing moments that transcend time through the lens of creativity.
-        </p>
-        <p class="btn">
-          <button class="btn-service">Our Services</button>
-          <button class="btn-contact">Contact Me</button>
-        </p>
+    <div id="services">
+      <div class="serv">
+        <div class="srv-card">
+          <img src="src/drone.png" alt="" /><br />Drone Photography
+        </div>
+        <div class="srv-card">
+          <img src="src/product.png" alt="" /><br>Product Photography
+        </div>
+        <div class="srv-card">
+          <img src="src/model.png" alt="" /><br>Model Photography
+        </div>
+        <div class="srv-card">
+          <img src="src/wedding.png" alt="" /><br>Wedding Photography
+        </div>
       </div>
-      <img src="../src/bg-home.jpg" alt="" class="bgimg" />
     </div>
-    <!-- EXPERIMENTAL -->
+    <!-- MOBILE NAV -->
 
     <div class="nav">
       <a href="../index.html">
@@ -107,21 +99,12 @@
       >
     </div>
 
-    <!-- END EXPERIMENTAL -->
+    <!-- END MOBILE NAV -->
     <script
       src="https://kit.fontawesome.com/97fcb74a5e.js"
       crossorigin="anonymous"
     ></script>
     <script>
-      // var aTags = document.querySelectorAll("span[data-href]");
-
-      // for (var i = 0; i < aTags.length; i++) {
-      //   var aTag = aTags[i];
-      //   aTag.addEventListener("click", function (e) {
-      //     var ele = e.target;
-      //     window.location.replace(ele.getAttribute("data-href"));
-      //   });
-      // }
 
       const navItems = document.getElementsByClassName("nav-item");
 

@@ -369,50 +369,6 @@ ul:hover li:hover ~ li:before {
   }
 }
 
-/* @media screen and (min-width: 900px) {
-  .nav,
-  .nav-item {
-    display: none;
-  }
-  #home {
-    flex-direction: column-reverse;
-    width: 100%;
-    align-content: center;
-  }
-  #home .bgimg {
-    height: 300px;
-  }
-  #home .heading {
-    margin-top: 100px;
-    font-size: 0.8rem;
-  }
-  #home .heading h1 {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  header nav,
-  .fa-angles-down {
-    display: none;
-  }
-  #home {
-    flex-direction: column-reverse;
-    width: 100%;
-    align-content: center;
-  }
-  #home .bgimg {
-    height: 300px;
-  }
-  #home .heading {
-    margin-top: 100px;
-    font-size: 0.8rem;
-  }
-  #home .heading h1 {
-    font-size: 1.2rem;
-  }
-} */
-
 ::-webkit-scrollbar {
   width: 0;
 }
