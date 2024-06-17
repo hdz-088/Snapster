@@ -21,11 +21,11 @@
         <h1>Snapster</h1>
         <div class="links">
           <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="gallery/gallery.html">Gallery</a></li>
-            <li><a href="service/service.html">Service</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+            <li><a class="active" href="service.html">Service</a></li>
             <!-- <li><a href="#">Pricing</a></li> -->
-            <li><a href="contact/contact.html">Contact</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="socials">
@@ -63,15 +63,12 @@
           <button class="btn-contact">Contact Me</button>
         </p>
       </div>
-      <img src="src/bg-home.jpg" alt="" class="bgimg" />
+      <img src="../src/bg-home.jpg" alt="" class="bgimg" />
     </div>
-    <span data-href="gallery.html"
-      ><i class="fa-solid fa-angles-down"></i
-    ></span>
     <!-- EXPERIMENTAL -->
 
     <div class="nav">
-      <a href="..index.html">
+      <a href="../index.html">
         <div class="nav-item">
           <!-- <i class="material-icons home-icon"> home </i> -->
           <span class="material-icons home-icon material-symbols-outlined">
@@ -90,7 +87,7 @@
           <!-- <span class="nav-text">Gallery</span> -->
         </div></a
       >
-      <a href="service/service.html">
+      <a href="service.html">
         <div class="nav-item active">
           <!-- <i class="material-icons search-icon"> search </i> -->
           <span class="material-icons service-icon material-symbols-outlined">
@@ -116,15 +113,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var aTags = document.querySelectorAll("span[data-href]");
+      // var aTags = document.querySelectorAll("span[data-href]");
 
-      for (var i = 0; i < aTags.length; i++) {
-        var aTag = aTags[i];
-        aTag.addEventListener("click", function (e) {
-          var ele = e.target;
-          window.location.replace(ele.getAttribute("data-href"));
-        });
-      }
+      // for (var i = 0; i < aTags.length; i++) {
+      //   var aTag = aTags[i];
+      //   aTag.addEventListener("click", function (e) {
+      //     var ele = e.target;
+      //     window.location.replace(ele.getAttribute("data-href"));
+      //   });
+      // }
 
       const navItems = document.getElementsByClassName("nav-item");
 

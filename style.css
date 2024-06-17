@@ -317,15 +317,15 @@ ul:hover li:hover ~ li:before {
 /* SERVICE>HTML STYLE */
 
 /* MEDIA QUERIES DO NOT WRITE ANYTHING BELOW THIS  */
-/* @media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1001px) {
   .nav,
   .nav-item {
     display: none;
   }
-} */
+}
 
 /* Tablets and smaller desktops (768px and up) */
-/* @media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .nav,
   .nav-item {
     display: none;
@@ -367,9 +367,9 @@ ul:hover li:hover ~ li:before {
   #home .heading h1 {
     font-size: 1.2rem;
   }
-} */
+}
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   .nav,
   .nav-item {
     display: none;
@@ -411,7 +411,7 @@ ul:hover li:hover ~ li:before {
   #home .heading h1 {
     font-size: 1.2rem;
   }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0;
