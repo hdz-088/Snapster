@@ -55,6 +55,7 @@
     rgba(37, 39, 42, 1) 90%
   );
   box-shadow: -3px 0px 31px 10px rgba(24, 24, 24, 0.75);
+  cursor: pointer;
 }
 
 #services .srv-card:nth-child(2):hover {
@@ -68,6 +69,7 @@
   );
   /* box-shadow: -3px 0px 31px 10px rgba(24,24,24,0.75); */
   box-shadow: 3px 3px 31px 11px rgba(24, 24, 24, 0.76);
+  cursor: pointer;
 }
 
 #services .srv-card:nth-child(3):hover {
@@ -81,6 +83,7 @@
   );
   /* box-shadow: -3px 0px 31px 10px rgba(24,24,24,0.75); */
   box-shadow: -3px -3px 31px 11px rgba(24, 24, 24, 0.76);
+  cursor: pointer;
 }
 
 #services .srv-card:nth-child(4):hover {
@@ -93,10 +96,11 @@
     rgba(37, 39, 42, 1) 90%
   );
   box-shadow: 3px 0px 31px 10px rgba(24, 24, 24, 0.75);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
-  .serv{
+  .serv {
     flex-direction: column;
   }
 }
