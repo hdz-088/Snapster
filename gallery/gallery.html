@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snapster</title>
     <link rel="shortcut icon" href="../src/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="../style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -41,8 +42,20 @@
         </div>
       </nav>
     </header>
-    <div id="gallery">
-      
+
+    <div class="gallery">
+      <div class="slider">
+        <div class="slides" style="--img: url('img/img (1).jpg')"></div>
+        <div class="slides" style="--img: url('img/img (2).jpg')"></div>
+        <div class="slides" style="--img: url('img/img (3).jpg')"></div>
+        <div class="slides" style="--img: url('img/img (4).jpg')"></div>
+        <div class="slides" style="--img: url('img/img (5).jpg')"></div>
+        <div class="slides" style="--img: url('img/img (6).jpg')"></div>
+      </div>
+      <div class="button">
+        <span class="prev"></span>
+        <span class="next"></span>
+      </div>
     </div>
     <!-- EXPERIMENTAL -->
 
@@ -92,15 +105,28 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var aTags = document.querySelectorAll("span[data-href]");
+      // var aTags = document.querySelectorAll("span[data-href]");
 
-      for (var i = 0; i < aTags.length; i++) {
-        var aTag = aTags[i];
-        aTag.addEventListener("click", function (e) {
-          var ele = e.target;
-          window.location.replace(ele.getAttribute("data-href"));
-        });
-      }
+      // for (var i = 0; i < aTags.length; i++) {
+      //   var aTag = aTags[i];
+      //   aTag.addEventListener("click", function (e) {
+      //     var ele = e.target;
+      //     window.location.replace(ele.getAttribute("data-href"));
+      //   });
+      // }
+
+      let next = document.querySelector(".next");
+      let prev = document.querySelector(".prev");
+      let slider = document.querySelector(".slider");
+
+      next.addEventListener("click", function () {
+        let slides = document.querySelectorAll(".slides");
+        slider.appendChild(slides[0]);
+      });
+      prev.addEventListener("click", function () {
+        let slides = document.querySelectorAll(".slides");
+        slider.prepend(slides[slides.length - 1]);
+      });
 
       const navItems = document.getElementsByClassName("nav-item");
 
