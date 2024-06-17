@@ -34,23 +34,31 @@ header nav h1 {
   background: none;
   text-shadow: 0 0 5px #64d5e4b6, 0 0 25px #64d5e4b6, 0 0 50px #64d5e4b6,
     0 0 200px #64d5e4b6;
+  cursor: pointer;
 }
 
 header nav .socials .fa-brands {
-  color: #64d5e4;
+  color: #eeeeee54;
   font-size: 1.5em;
   margin-left: 5px;
   cursor: pointer;
   padding: 2px;
+  transition: 0.7s ease-in-out;
 }
 
-header nav .socials .fa-brands:hover {
-  color: #000;
-  background-color: #64d5e4;
-  border-radius: 5px;
+header nav .socials .fa-instagram:hover {
+  color: #ee2a7b;
 }
 
-/* Animation Experimental */
+header nav .socials .fa-x-twitter:hover {
+  color: #ffffff;
+}
+
+header nav .socials .fa-square-facebook:hover {
+  color: #4267b2;
+}
+
+/* NAVBAR ANIMATION */
 
 header nav .links ul li .active {
   color: #fff;
@@ -104,7 +112,7 @@ ul:hover li:hover ~ li:before {
   transition: 0.2s 0.2s, scale 0s 0.4s;
 }
 
-/* Experimental End */
+/* NAVBAR ANIMATION END */
 
 #home {
   color: #fff;
@@ -155,6 +163,7 @@ ul:hover li:hover ~ li:before {
   align-items: center;
   cursor: pointer;
   background-color: #000;
+  transition: 0.3s ease-in;
 }
 
 #home .heading .btn .btn-service:hover {
@@ -178,6 +187,7 @@ ul:hover li:hover ~ li:before {
   border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
+  transition: 0.3s ease-in;
 }
 
 #home .heading .btn .btn-contact:hover {
@@ -188,7 +198,7 @@ ul:hover li:hover ~ li:before {
     0 0 200px #64d5e4;
 }
 
-.fa-angles-down {
+/* .fa-angles-down {
   position: fixed;
   color: #fff;
   font-size: 2em;
@@ -204,10 +214,12 @@ ul:hover li:hover ~ li:before {
   color: #64d5e4;
   text-shadow: 0 0 5px #64d5e4, 0 0 25px #64d5e4, 0 0 50px #64d5e4,
     0 0 200px #64d5e4;
-}
+} */
+
+/* MOBILE NAVBAR */
 
 .nav {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 0;
   left: 0;
@@ -312,11 +324,10 @@ ul:hover li:hover ~ li:before {
   color: #0091a9;
 }
 
-/* END EXPERMIENTAL NAVBAR MOBILE */
-
-/* SERVICE>HTML STYLE */
+/* END NAVBAR MOBILE */
 
 /* MEDIA QUERIES DO NOT WRITE ANYTHING BELOW THIS  */
+
 @media only screen and (min-width: 1001px) {
   .nav,
   .nav-item {

@@ -1,61 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-#contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-#contact .contact-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #eeeeeed7;
-    width: 40%;
-    font-family: 'Poppins';
-    text-align: justify;
+#contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eeeeeed7;
+  width: 40%;
+  font-family: "Poppins";
+  text-align: justify;
 }
 
-#contact .contact-info h3{
-    text-align: center;
-    font-size: 22px;
-    font-weight: 400;
+#contact .contact-img img {
+  height: 550px;
 }
 
-#contact .contact-info .contact-links{
-    margin-top: 20px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 25px;
-    color: #eeeeee54;
+#contact .contact-info h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#contact .contact-info .contact-links {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: #eeeeee54;
 }
 
 #contact .contact-info .contact-links i {
-    cursor: pointer;
-    transition: 0.7s ease-in-out;
-    padding: 5px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+  padding: 5px;
 }
 
-#contact .contact-info .contact-links i:nth-child(1):hover{
-    color: #ee2a7b;
+#contact .contact-info .contact-links i:nth-child(1):hover {
+  color: #ee2a7b;
 }
-#contact .contact-info .contact-links i:nth-child(2):hover{
-    color: #4267B2;
+#contact .contact-info .contact-links i:nth-child(2):hover {
+  color: #4267b2;
 }
-#contact .contact-info .contact-links i:nth-child(3):hover{
-    color: #ffffff;
+#contact .contact-info .contact-links i:nth-child(3):hover {
+  color: #ffffff;
 }
-#contact .contact-info .contact-links i:nth-child(4):hover{
-    color: #92bcf9;
+#contact .contact-info .contact-links i:nth-child(4):hover {
+  color: #92bcf9;
 }
-#contact .contact-info .contact-links i:nth-child(5):hover{
-    color: #41a95b;
+#contact .contact-info .contact-links i:nth-child(5):hover {
+  color: #41a95b;
 }
-#contact .contact-info .contact-links i:nth-child(6):hover{
-    color: #ffffff;
+#contact .contact-info .contact-links i:nth-child(6):hover {
+  color: #ffffff;
 }
 
+@media screen and (max-width: 700px) {
+  #contact {
+    padding: 10px;
+    flex-direction: column;
+  }
+  #contact .contact-img img {
+    height: 300px;
+  }
+  #contact .contact-info{
+    width: 90%;
+  }
+  #contact .contact-info h3{
+    font-size: 18px;
+  }
+  #contact .contact-info p{
+    font-size: 12px;
+  }
+  #contact .contact-info .contact-links{
+    margin-top: 30px;
+    width: 100%;
+  }
+}

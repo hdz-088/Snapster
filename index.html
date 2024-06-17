@@ -59,8 +59,12 @@
           Capturing moments that transcend time through the lens of creativity.
         </p>
         <p class="btn">
-          <button class="btn-service">Our Services</button>
-          <button class="btn-contact">Contact Me</button>
+          <a href="service/service.html"
+            ><button class="btn-service">Our Services</button></a
+          >
+          <a href="contact/contact.html">
+            <button class="btn-contact">Contact Me</button></a
+          >
         </p>
       </div>
       <img src="src/bg-home.jpg" alt="" class="bgimg" />
@@ -76,39 +80,30 @@
     <div class="nav">
       <a href="index.html">
         <div class="nav-item active">
-          <!-- <i class="material-icons home-icon"> home </i> -->
           <span class="material-icons home-icon material-symbols-outlined">
             home
           </span>
-          <!-- <span class="nav-text">Home</span> -->
         </div></a
       >
       <a href="gallery/gallery.html">
         <div class="nav-item">
-          <!-- <i class="material-icons gallery-thumbnail"> favorite </i> -->
-
           <span class="material-icons gallery-icon material-symbols-outlined">
             gallery_thumbnail
           </span>
-          <!-- <span class="nav-text">Gallery</span> -->
         </div></a
       >
       <a href="service/service.html">
         <div class="nav-item">
-          <!-- <i class="material-icons search-icon"> search </i> -->
           <span class="material-icons service-icon material-symbols-outlined">
             photo_camera
           </span>
-          <!-- <span class="nav-text">Service</span> -->
         </div></a
       >
       <a href="contact/contact.html">
         <div class="nav-item">
-          <!-- <i class="material-icons person-icon"> person </i> -->
           <span class="material-icons about-icon material-symbols-outlined">
             account_circle
           </span>
-          <!-- <span class="nav-text">About</span> -->
         </div></a
       >
     </div>
@@ -119,15 +114,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var aTags = document.querySelectorAll("span[data-href]");
+      // var aTags = document.querySelectorAll("span[data-href]");
 
-      for (var i = 0; i < aTags.length; i++) {
-        var aTag = aTags[i];
-        aTag.addEventListener("click", function (e) {
-          var ele = e.target;
-          window.location.replace(ele.getAttribute("data-href"));
-        });
-      }
+      // for (var i = 0; i < aTags.length; i++) {
+      //   var aTag = aTags[i];
+      //   aTag.addEventListener("click", function (e) {
+      //     var ele = e.target;
+      //     window.location.replace(ele.getAttribute("data-href"));
+      //   });
+      // }
 
       const navItems = document.getElementsByClassName("nav-item");
 
